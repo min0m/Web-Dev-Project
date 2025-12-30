@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - UniMarket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🎓 UniMarket</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="cta-btn">Contact Seller</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" style="display: flex; justify-content: center; align-items: center; min-height: 80vh;">
+        
+        <div class="form-box">
+            <h2 style="text-align: center;">📩 Contact Seller / Place Order</h2>
+            <p style="text-align: center; margin-bottom: 20px; color: #666;">Fill this out and the seller will text/email you to arrange the meetup.</p>
+            
+            <form onsubmit="submitForm(event)">
+                <label>Item Name (or Service)</label>
+                <input type="text" placeholder="e.g. Calculus Notes" required>
+
+                <label>Your Name</label>
+                <input type="text" placeholder="John Doe" required>
+
+                <label>Your Phone / WhatsApp</label>
+                <input type="text" placeholder="+1 234 567 890" required>
+
+                <label>Message</label>
+                <textarea rows="4" placeholder="Hi, is this still available? when can we meet?"></textarea>
+
+                <button type="submit">Send Request</button>
+            </form>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
